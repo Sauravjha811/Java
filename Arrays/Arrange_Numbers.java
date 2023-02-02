@@ -12,19 +12,19 @@ public class Arrange_Numbers {
     }
     // these method print the array's element 1 3 5....6 4 2
     public static void arrange(int[] arr, int n) {
-        int j=1;
+        int k=1;
         // i start from 0, j start end index.
         // i traverse through i<=k
-       for(int i=0, k=n-1;i<=k;i++,k--)
+       for(int i=0, j=n-1;i<=j;i++,j--)
        {
         // These condition for the odd case.
            if(i==k)
            {
-               arr[i]=j;
+               arr[i]=k;
                return;
            }
-          arr[i]=j++;
-          arr[k]=j++;
+          arr[i]=k++;
+          arr[j]=k++;
        }
 }
 }
